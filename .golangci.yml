@@ -1,0 +1,78 @@
+
+run:
+  allow-parallel-runners: true
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - govet
+    - structcheck
+    - unused
+    - varcheck
+    - depguard
+    - errorlint
+    - exhaustive
+    - funlen
+    - gochecknoinits
+    - gocognit
+    - gocritic
+    - godot
+    - godox
+    - goimports
+    - gomnd
+    - gosec
+    - ireturn
+    - misspell
+    - nestif
+    - prealloc
+    - rowserrcheck
+    - testpackage
+    - revive
+    - wsl
+
+linters-settings:
+  errcheck:
+    check-blank: true
+
+  govet:
+    enable:
+      -  assign
+      - atomic
+      - bools
+      - buildtag
+      - cgocall
+      - composite
+      - copylocks
+      - errorsas
+      - httpresponse
+      - loopclosure
+      - lostcancel
+      - nilfunc
+      - printf
+      - stdmethods
+      - structtag
+      - tests
+      - unmarshal
+      - unreachable
+      - unusedresult
+
+  unused:
+    go: "1.17"
+
+  revive:
+    ignore-generated-header: true
+    severity: warning
+    rules:
+      - name: exported
+      - name: package-comments
+
+issues:
+  include:
+    - EXC0012
+    - EXC0013
+
+  exclude-rules:
+    - path: _test\.go
+      linters:
+        - funlen
