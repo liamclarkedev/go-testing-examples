@@ -7,11 +7,11 @@ import (
 
 	"github.com/go-playground/validator/v10"
 
-	"github.com/clarke94/go-testing-examples/narrow"
-	"github.com/clarke94/go-testing-examples/unit"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
+	"github.com/liamclarkedev/go-testing-examples/narrow"
+	"github.com/liamclarkedev/go-testing-examples/unit"
 )
 
 func TestController_Create(t *testing.T) {

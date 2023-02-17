@@ -1,4 +1,4 @@
-module github.com/clarke94/go-testing-examples
+module github.com/liamclarkedev/go-testing-examples
 
 go 1.17
 

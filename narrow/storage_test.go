@@ -8,13 +8,14 @@ import (
 	"os"
 	"testing"
 
-	"github.com/clarke94/go-testing-examples/narrow"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
 	_ "github.com/lib/pq"
 	"github.com/ory/dockertest/v3"
 	"github.com/ory/dockertest/v3/docker"
+
+	"github.com/liamclarkedev/go-testing-examples/narrow"
 )
 
 var db *sql.DB
